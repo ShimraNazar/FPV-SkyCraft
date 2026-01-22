@@ -1,0 +1,124 @@
+:root{
+  --gold:#CCBA78;
+  --dark:#1f2328;
+}
+
+.site-nav{ background: var(--dark); }
+.brand-sky{ color:#c0c0c0; }
+.brand-craft{ color:#8f8f8f; }
+
+.brand-logo{
+  width:40px;height:40px;
+  border-radius:50%;
+  object-fit:cover;
+  background:#fff;
+  border:2px solid rgba(255,255,255,.25);
+}
+
+.auth-logo{
+  width:90px;height:90px;
+  border-radius:50%;
+  object-fit:cover;
+  background:#fff;
+  border:2px solid rgba(0,0,0,.1);
+}
+
+.hero-slide{ padding:3.5rem 0; }
+
+/* slide1 background image */
+.hero-slide-bg{
+  background:url("../images/fpv_equipment.jpeg") center/cover no-repeat;
+  min-height:420px;
+  position:relative;
+}
+.hero-overlay{
+  min-height:420px;
+  display:flex;
+  align-items:center;
+  background:rgba(0,0,0,.55);
+}
+
+/* slide2/3 background */
+.hero-slide-gold{ background:var(--gold); }
+
+.hero-kicker{
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-weight:700;
+  color:rgba(255,255,255,.7);
+}
+.hero-title{ font-weight:500; line-height:1.15; }
+.hero-text{ max-width:40rem; }
+
+.hero-img{
+  width:58%;
+  max-width:520px;
+  height:auto;
+  filter: drop-shadow(0 12px 30px rgba(0,0,0,.25));
+}
+
+.product-card{
+  border:0;
+  border-radius:1.25rem;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+.product-img{
+  height:180px;
+  object-fit:contain;
+  background:#fff;
+  padding:1rem;
+}
+
+.filter-card, .auth-card, .contact-tile, .cart-card, .pdp-card, .about-card, .info-tile{
+  background:#fff;
+  border-radius:1.25rem;
+  border:1px solid rgba(0,0,0,.06);
+  box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.results-bar{
+  background:#fff;
+  border-radius:1.25rem;
+  border:1px solid rgba(0,0,0,.06);
+  padding:.9rem 1rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.cart-thumb{
+  width:90px;height:90px;
+  object-fit:contain;
+  background:#fff;
+  border-radius:1rem;
+  border:1px solid rgba(0,0,0,.06);
+  padding:.5rem;
+}
+
+.pdp-img-wrap{
+  background:#fff;
+  border-radius:1.25rem;
+  overflow:hidden;
+  border:1px solid rgba(0,0,0,.06);
+}
+.pdp-img{
+  width:100%; height:100%;
+  object-fit:contain;
+  padding:1.25rem;
+}
+.spec-tile{
+  border-radius:1rem;
+  border:1px solid rgba(0,0,0,.06);
+  background: rgba(204,186,120,.18);
+}
+
+.site-footer .footer-link{ color:rgba(0,0,0,.55); text-decoration:none; }
+.site-footer .footer-link:hover{ text-decoration:underline; }
+
+/* Responsive adjustments */
+@media (max-width:576px){
+  .hero-slide{ padding:2.5rem 0; }
+  .hero-slide-bg,.hero-overlay{ min-height:360px; }
+  .product-img{ height:160px; }
+}
